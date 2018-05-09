@@ -1,19 +1,35 @@
 <header>
-    <nav>
-        <a title="tourmond" [routerLink]="['home']">
+    <nav mat-tab-nav-bar>
+        <a mat-tab-link [routerLink]="['home']" #rlHome="routerLinkActive"
+           [active]="rlHome.isActive" routerLinkActive>
             <img src=".">
         </a>
-        <a title="cources" [routerLink]="['cources']">
-            <p>Courses</p>
+
+        <a mat-tab-link [routerLink]="['cources']" #rlCourses="routerLinkActive"
+           [active]="rlCourses.isActive" routerLinkActive>
+            Courses
         </a>
-        <a title="about us" [routerLink]="['about-us']">
-            <p>About Us</p>
+
+        <a mat-tab-link [routerLink]="['about-us']" #rlAbout="routerLinkActive"
+           [active]="rlAbout.isActive" routerLinkActive>
+            About Us
+        </a>
+
+        <a mat-tab-link href="tel:{{phoneNumber}}">
+            {{ phoneNumber }}
+        </a>
+
+        <a mat-tab-link [routerLink]="['contact-us']" #rlContact="routerLinkActive"
+           [active]="rlContact.isActive" routerLinkActive>
+            Contact Us
         </a>
     </nav>
 </header>
+
 <main>
     <router-outlet></router-outlet>
 </main>
+
 <footer>
 
 </footer>
