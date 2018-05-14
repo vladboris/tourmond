@@ -6,7 +6,6 @@ import {AboutUsComponent} from '../components/about-us/about-us.component';
 import {CoursesComponent} from '../components/courses/courses.component';
 import {ContactUsComponent} from '../components/contact-us/contact-us.component';
 
-
 const RoutesMap: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},

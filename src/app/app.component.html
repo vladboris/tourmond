@@ -2,7 +2,7 @@
     <nav mat-tab-nav-bar>
         <a mat-tab-link [routerLink]="['home']" #rlHome="routerLinkActive"
            [active]="rlHome.isActive" routerLinkActive>
-            <img src=".">
+            <img class="img-tm-logo" src="../assets/svg/tm_logo.svg">
         </a>
 
         <a mat-tab-link [routerLink]="['cources']" #rlCourses="routerLinkActive"
@@ -15,15 +15,16 @@
             About Us
         </a>
 
-        <a mat-tab-link href="tel:{{phoneNumber}}">
-            {{ phoneNumber }}
-        </a>
-
         <a mat-tab-link [routerLink]="['contact-us']" #rlContact="routerLinkActive"
            [active]="rlContact.isActive" routerLinkActive>
             Contact Us
         </a>
+
+        <a mat-tab-link href="tel:{{phoneNumber}}">
+            {{ phoneNumber }}
+        </a>
     </nav>
+
 </header>
 
 <main>

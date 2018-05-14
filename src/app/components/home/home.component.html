@@ -1,8 +1,27 @@
 <section>
-  <div>
-    Video
-  </div>
-  <div>
-    Description
-  </div>
+    <mat-grid-list cols="1" rowHeight="2:1">
+        <mat-grid-tile>
+            <div class="video-container">
+                <div class="title-container">
+                    <div class="headline fa fa-4x text-uppercase">
+                        Tourmond
+                        <br>
+                        Adventure
+                    </div>
+                    <div class="inner fa fa-lg text-uppercase">
+                            Explore wild places
+                    </div>
+                </div>
+                <video playsinline autoplay loop muted>
+                    <source src="../../../assets/video/main-video.mp4" type="video/mp4"/>
+                    Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile style="background-color: #c5cae94d">
+            <div class="description fa fa-2x text-center">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
 </section>

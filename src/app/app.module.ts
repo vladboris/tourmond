@@ -4,7 +4,10 @@ import { NgModule} from '@angular/core';
 
 // App Modules
 import { AppRoutingModule } from './routes/routing.module';
-import { AppMaterialModule } from './material.module';
+import { AppMaterialModule } from './modules/material.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -24,7 +27,9 @@ import { CoursesComponent } from './components/courses/courses.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    NgbModule.forRoot(),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
