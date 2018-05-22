@@ -1,4 +1,6 @@
 @import '../scss/variables.scss';
+@import '../scss/header.scss';
+@import '../scss/footer.scss';
 
 nav {
   text-transform: uppercase;
@@ -8,3 +10,4 @@ nav {
 .img-tm-logo {
   block-size: 200%;
 }
+
