@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
     public phoneNumber;
     constructor(private router: Router) {
-        this.phoneNumber = '+2243341624';
+        this.phoneNumber = '+2223333333';
     }
 
     ngOnInit() {
