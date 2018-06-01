@@ -1,0 +1,20 @@
+.contacts {
+  background-color: #e4ebf0;
+  color: #475f7f; }
+  .contacts__telicon {
+    width: 50px; }
+  .contacts__telitext {
+    color: #55c8bc; }
+  .contacts__numberblock {
+    font-size: 0.85rem; }
+  .contacts__mailinp:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .contacts__mailinp:focus:-ms-input-placeholder {
+    color: transparent; }
+  .contacts__mailinp:focus::-ms-input-placeholder {
+    color: transparent; }
+  .contacts__mailinp:focus::placeholder {
+    color: transparent; }
+  .contacts__btn {
+    background-color: #55c8bc;
+    color: #475f7f; }

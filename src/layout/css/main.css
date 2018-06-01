@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'travelingregular';
+  src: url("../assets/fonts/traveling-webfont.woff2") format("woff2"), url("../assets/fonts/traveling-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.core {
+  font-family: 'travelingregular', sans-serif;
+  font-size: 1em; }
+  .core__descr {
+    background-color: rgba(228, 235, 240, 0.5); }
+
+@media all and (min-width: 768px) {
+  .core__tname {
+    font-size: 3.5rem;
+    font-weight: normal; } }
