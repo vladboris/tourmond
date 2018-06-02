@@ -1,0 +1,13 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'video.scss';
+@import 'main.scss';
+@import 'footer.scss';
+@import 'contactform.scss';
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: $back-color;
+  }

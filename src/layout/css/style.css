@@ -1,0 +1,175 @@
+.header {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 400; }
+
+.logo {
+  height: 55px;
+  width: 100px; }
+  .logo__svg {
+    width: 100px;
+    height: 45px;
+    pointer-events: none; }
+  .logo__fallback {
+    background: url("../assets/images/logo.png");
+    width: 85px;
+    height: 38.25px;
+    background-size: contain; }
+
+.material-icons {
+  font-size: 40px; }
+
+.menu__tggsp:hover {
+  color: #55c8bc; }
+
+.menu__tggbtn:hover {
+  outline: none; }
+
+.menu__tggbtn:focus {
+  outline: none; }
+
+.menu__tggbtn:active {
+  outline: none; }
+
+.menu__link {
+  color: #475f7f; }
+  .menu__link:hover {
+    color: #55c8bc; }
+
+.menu__under {
+  background-color: #e4ebf0;
+  color: #475f7f; }
+
+.menu__underitem {
+  color: #475f7f; }
+  .menu__underitem:hover {
+    color: #55c8bc;
+    background-color: transparent; }
+
+.menu__phone {
+  color: #475f7f; }
+  .menu__phone:hover {
+    color: #55c8bc;
+    text-decoration: none; }
+  .menu__phone:focus {
+    color: #55c8bc;
+    text-decoration: none; }
+  .menu__phone:active {
+    color: #55c8bc;
+    text-decoration: none; }
+
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  -o-transition: 1s opacity;
+  transition: 1s opacity; }
+  .video-container .title-container {
+    display: grid;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    color: #f0f0f0 !important; }
+  .video-container .inner {
+    width: 45%;
+    margin: 0 auto; }
+  .video-container video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: inherit;
+    z-index: -10; }
+
+@font-face {
+  font-family: 'travelingregular';
+  src: url("../assets/fonts/traveling-webfont.woff2") format("woff2"), url("../assets/fonts/traveling-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.core {
+  font-family: 'travelingregular', sans-serif;
+  font-size: 1em; }
+  .core__smallname {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.8rem; }
+
+@media all and (min-width: 576px) {
+  .core__tname {
+    font-size: 3rem; }
+  .core__smallname {
+    font-size: 1rem; } }
+
+@media all and (min-width: 768px) {
+  .core__tname {
+    font-size: 3.5rem; }
+  .core__smallname {
+    font-size: 1.15rem; } }
+
+@media all and (min-width: 1200px) {
+  .core__tname {
+    font-size: 4.7rem; }
+  .core__smallname {
+    font-size: 1.5rem; } }
+
+.footr {
+  background-color: #475f7f;
+  font-size: 0.85rem; }
+  .footr__cellfour {
+    min-width: 150px; }
+  .footr__phone {
+    color: #55c8bc; }
+    .footr__phone:hover {
+      color: #55c8bc;
+      text-decoration: none; }
+    .footr__phone:focus {
+      color: #55c8bc;
+      text-decoration: none; }
+    .footr__phone:active {
+      color: #55c8bc;
+      text-decoration: none; }
+
+.contacts {
+  background-color: #e4ebf0;
+  color: #475f7f; }
+  .contacts__telicon {
+    width: 50px; }
+  .contacts__telitext {
+    color: #55c8bc; }
+  .contacts__numberblock {
+    font-size: 0.85rem; }
+  .contacts__phone {
+    color: #475f7f; }
+    .contacts__phone:hover {
+      color: #55c8bc;
+      text-decoration: none; }
+    .contacts__phone:focus {
+      color: #55c8bc;
+      text-decoration: none; }
+    .contacts__phone:active {
+      color: #55c8bc;
+      text-decoration: none; }
+  .contacts__mailinp:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .contacts__mailinp:focus:-ms-input-placeholder {
+    color: transparent; }
+  .contacts__mailinp:focus::-ms-input-placeholder {
+    color: transparent; }
+  .contacts__mailinp:focus::placeholder {
+    color: transparent; }
+  .contacts__btn {
+    background-color: #55c8bc;
+    color: #475f7f; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #e4ebf0; }

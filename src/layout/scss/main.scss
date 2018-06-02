@@ -1,0 +1,58 @@
+@import 'variables.scss';
+
+@font-face {
+    font-family: 'travelingregular';
+    src: url('../assets/fonts/traveling-webfont.woff2') format('woff2'),
+    url('../assets/fonts/traveling-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.core {
+    font-family: 'travelingregular', sans-serif;
+    font-size: 1em;
+
+    &__smallname {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (min-width: 576px) {
+    .core {
+
+        &__tname {
+            font-size: 3rem;
+        }
+
+        &__smallname {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .core {
+
+        &__tname {
+            font-size: 3.5rem;
+        }
+
+        &__smallname {
+            font-size: 1.15rem;
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .core {
+
+        &__tname {
+            font-size: 4.7rem;
+        }
+
+        &__smallname {
+            font-size: 1.5rem;
+        }
+    }
+}
