@@ -1,5 +1,7 @@
 materials/
 prepros-6.config
+src/prepros-6.config
+src/layout/prepros-6.config
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 

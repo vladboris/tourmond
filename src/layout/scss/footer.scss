@@ -1,0 +1,29 @@
+@import 'variables.scss';
+
+.footr {
+    background-color: $maintext-color;
+    font-size: 0.85rem;
+
+
+    &__cellfour {
+        min-width: 150px;
+    }
+    &__phone {
+        color: $btn-color;
+
+        &:hover {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:focus {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: $btn-color;
+            text-decoration: none;
+        }
+    }
+}
