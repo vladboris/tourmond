@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { phoneNumber } from '../../constants';
+
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -9,7 +11,7 @@ export class ContactUsComponent implements OnInit {
   public contactNumber: string;
 
   constructor() {
-    this.contactNumber = '+1 (222) 333-4444';
+    this.contactNumber = phoneNumber;
   }
 
   ngOnInit() {
