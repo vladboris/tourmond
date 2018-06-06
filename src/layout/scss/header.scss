@@ -26,10 +26,6 @@
     }
 }
 
-.material-icons {
-    font-size: 40px;
-}
-
 .menu {
     // background-color: $back-colors;
 
@@ -37,6 +33,10 @@
         &:hover {
             color: $btn-color;
         }
+    }
+
+    &__tggfnt {
+        font-size: 36px;
     }
 
     &__tggbtn {
@@ -67,23 +67,24 @@
         }
     }
 
-    &__under {
-        background-color: $back-color;
-        color: $maintext-color;
-    }
+    // &__under {
+    //     background-color: $back-color;
+    //     color: $maintext-color;
+    // }
 
-    &__underitem {
-        color: $maintext-color;
+    // &__underitem {
+    //     color: $maintext-color;
 
 
-        &:hover {
-            color: $btn-color;
-            background-color: transparent;
-        }
-    }
+    //     &:hover {
+    //         color: $btn-color;
+    //         background-color: transparent;
+    //     }
+    // }
 
     &__phone {
         color: $maintext-color;
+        font-size: 0.85rem;
 
         &:hover {
             color: $btn-color;
@@ -101,3 +102,13 @@
         }
     }
 }
+
+@media all and (min-width: 360px) {
+    .menu {
+
+        &__phone {
+        font-size: 1em;
+           }
+}
+}
+
