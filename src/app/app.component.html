@@ -1,83 +1,82 @@
-<div class="header" id="home">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg menu">
-            <button class="navbar-toggler pb-3 menu__tggbtn" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon b-inline-block menu__tggsp">
-                    <i class="material-icons menu__tggfnt" style="font-size: 40px">reorder</i>
-                </span>
-            </button>
-            <a class="navbar-brand d-lg-none logo" routerLink="/home">
-                <object class="logo__svg" type="image/svg+xml" data="assets/svg/logo.svg">
-                    <div class="logo__fallback"></div>
-                </object>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand d-lg-inline-block d-none aling-self-end logo" routerLink="/home">
-                    <object class="logo__svg" type="image/svg+xml" data="assets/svg/logo.svg">
-                        <div class="logo__fallback"></div>
-                    </object>
-                </a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active menu__item">
-                        <a class="nav-link text-uppercase menu__link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown menu__item">
-                        <a class="nav-link text-uppercase menu__link" routerLink="/cources">Cources</a>
-                    </li>
-                    <li class="nav-item menu__item">
-                        <a class="nav-link text-uppercase menu__link" routerLink="/about-us">About us</a>
-                    </li>
-                    <li class="nav-item menu__item">
-                        <a class="nav-link text-uppercase menu__link" routerLink="/contact-us">Contact us</a>
-                    </li>
-                </ul>
-            </div>
-            <p class="text-right menu__phone mb-0">{{ phoneNumber }}</p>
-        </nav>
-        <!-- Container end -->
+<!-- <header class="header"> -->
+<nav class="navbar sticky-top navbar-expand-lg menu">
+    <button class="navbar-toggler pb-3 menu__tggbtn" type="button"
+            data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon b-inline-block menu__tggsp"><i class="fas fa-bars menu__tggfnt"></i></span>
+    </button>
+    <a class="navbar-brand d-lg-none logo" routerLink="/home">
+        <object class="logo__svg" type="image/svg+xml" data="../assets/svg/logo.svg">
+            <div class="logo__fallback"></div>
+        </object>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand d-lg-inline-block d-none aling-self-end logo" routerLink="/home">
+            <object class="logo__svg" type="image/svg+xml" data="../assets/svg/logo.svg">
+                <div class="logo__fallback"></div>
+            </object>
+        </a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active menu__item">
+                <a class="nav-link text-uppercase menu__link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item menu__item menu__underli">
+                <a class="nav-link text-uppercase menu__link" routerLink="/courses">Cources</a>
+            </li>
+            <li class="nav-item menu__item">
+                <a class="nav-link text-uppercase menu__link" routerLink="/about-us">About us</a>
+            </li>
+            <li class="nav-item menu__item">
+                <a class="nav-link text-uppercase menu__link" routerLink="/contact-us">Contact us</a>
+            </li>
+        </ul>
     </div>
-</div>
+    <a class="text-right menu__phone mb-0" href="tel:+17738773307">{{ phoneNumber }}</a>
+</nav>
+<!-- </header> -->
 
 <main>
     <router-outlet></router-outlet>
 </main>
 
-<footer class="footer-container">
-    <div class="container" style="font-size: 1vw">
-        <div class="row">
-            <div class="col-3">
-                <h4 routerLink="/about-us" style="font-size: 1.6vw">About Us</h4>
-                <p routerLink="/home"><a>Home</a></p>
-                <p><a>Blog</a></p>
-                <p><a>Privacy policy and terms</a></p>
-                <p><a>Reviews</a></p>
+<footer class="row justify-content-md-between footr no-gutters px-md-5">
+    <div class="col-12 col-md-6 ml-2 ml-sm-5 pl-sm-5 pl-md-0 pl-xl-5 ml-md-0 pr-md-1">
+        <div class="pl-xl-5 row justify-content-around justify-content-lg-center mr-lg-1">
+            <div class="col-6 footr__cell footr__acell my-3 my-sm-4 my-md-5 ml-lg-5">
+                <h5 class="text-capitalize">About us</h5>
+                <a class="footr__link" routerLink="/home"><p class="my-0">Home</p></a>
+                <a class="footr__link" routerLink="."><p class="my-0">Blog</p></a>
+                <a class="footr__link" routerLink="."><p class="my-0">Privacy policy and terms</p></a>
+                <a class="footr__link" routerLink="."><p class="my-0">Reviews</p></a>
             </div>
-            <div class="col-3">
-                <h4 style="font-size: 1.6vw">Partners</h4>
-                <p><a>Partner 1</a></p>
-                <p><a>Partner 2</a></p>
-                <p><a>Partner 3</a></p>
-                <p><a>Partner 4</a></p>
+            <div class="col-6 footr__cell footr__pcell col-md-3 my-3 my-sm-4 my-md-5">
+                <h5 class="text-capitalize">Partners</h5>
+                <p class="my-0">Partner 1</p>
+                <p class="my-0">Partner 2</p>
+                <p class="my-0">Partner 3</p>
+                <p class="my-0">Partner 4</p>
             </div>
-            <div class="col-3">
-                <h4 style="font-size: 1.6vw">Social</h4>
-                <p><a><i class="fa fa-facebook"></i> facebook</a></p>
-                <p><a><i class="fa fa-instagram"></i> instagram</a></p>
-                <p><a><i class="fa fa-skype"></i> skype</a></p>
-                <p><a><i class="fa fa-youtube-play"></i> youtube</a></p>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 ml-2 pr-2 pr-md-0 pr-xl-5 ml-sm-5 ml-md-0 pl-sm-5 pl-md-4 pl-lg-0">
+        <div class="row justify-content-around justify-content-lg-center pr-xl-5">
+            <div class="col-6 footr__cell footr__scell col-md-3 my-3 my-sm-4 my-md-5 mr-lg-5">
+                <h5 class="text-capitalize">Social</h5>
+                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-facebook"></i> facebook</p></a>
+                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-instagram"></i> instagram</p></a>
+                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-skype"></i> skype</p></a>
+                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-youtube"></i> youtube</p></a>
             </div>
-            <div class="col-3">
-                <h4 style="font-size: 1.6vw">Contact</h4>
-                <h6 style="font-size: 1.2vw"><strong>Tourmond Adventure</strong></h6>
-                <p>
-                    100 Division St
-                    Chicago, IL USA
-                </p>
-                <p><strong><a href="tel:+1-773-877-3307">{{ phoneNumber }}</a></strong></p>
-                <strong>Email us</strong>
+            <div class="col-6 footr__cell footr__ccell col-md-3 my-3 my-sm-4 my-md-5 mr-lg-5 ml-xl-3 footr__cellfour">
+                <h5 class="text-capitalize">Contact</h5>
+                <p class="font-weight-bold text-capitalize my-0">Tourmond adventure</p>
+                <p class="my-0 pr-1 pr-sm-0">{{ address }}</p>
+                <p class="my-0"><a class="text-right footr__phone m-0" href="tel:+17738773307">{{ phoneNumber }}</a></p>
+                <p class="my-0"><a class="text-right footr__phone m-0" href="mailto:randy.mcadams@tourmond.com">Email us</a></p>
             </div>
         </div>
     </div>
 </footer>
+

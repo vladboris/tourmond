@@ -3,7 +3,10 @@ import { Component,
 import { } from '@angular/common';
 import { Router } from '@angular/router';
 
-import { phoneNumber } from './constants';
+import { phoneNumber,
+         address,
+         email
+        } from './constants';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +14,13 @@ import { phoneNumber } from './constants';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    public phoneNumber;
+    public phoneNumber: string;
+    public address: string;
+    public email: string;
     constructor(private router: Router) {
         this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.email = email;
     }
 
     ngOnInit() {

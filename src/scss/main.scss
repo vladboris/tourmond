@@ -1,14 +1,170 @@
 @import 'variables.scss';
-@import 'video.scss';
 
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+@font-face {
+  font-family: 'travelingregular';
+  src: url('../../../assets/fonts/traveling-webfont.woff2') format('woff2'),
+       url('../../../assets/fonts/traveling-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-.description {
-  padding-left:  20%;
-  padding-right: 20%;
+.core {
+  font-family: 'travelingregular', sans-serif;
+  color: #fefefe;
+
+  &__tname {
+    margin-top: -8px;
+  }
+
+  &__smallname {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.8rem;
+    margin-top: -10px;
+  }
+
+  &__btn {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.6rem;
+    padding: 3px;
+    background-color: $back-colors;
+    border: 1.5px solid #fefefe;
+    color: #fefefe;
+
+    &:hover {
+      border-color: transparent;
+      background-color: $btn-color;
+      color: #fefefe;
+      outline: none;
+    }
+
+    &:active,
+    &:focus {
+      border-color: transparent;
+      background-color: $btn-color;
+      color: #fefefe;
+      outline: none;
+    }
+
+    &:visited {
+      border-color: transparent;
+      background-color: $btn-color;
+      border-color: #fefefe;
+      color: #fefefe;
+      outline: none;
+    }
+  }
+
+  &__wording {
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (min-width: 360px) and (max-width: 575.99px) {
+  .core {
+
+    &__tname {
+      margin-top: -1px;
+    }
+
+    &__btn {
+      font-size: 0.7rem;
+      padding: 3.5px;
+      margin-top: 8.5px;
+    }
+
+    &__wording {
+      font-size: 1em;
+    }
+
+    &__smallname {
+      margin-top: -5px;
+    }
+  }
+}
+
+@media all and (min-width: 576px) {
+  .core {
+
+    &__tname {
+      font-size: 3rem;
+    }
+
+    &__smallname {
+      font-size: 1rem; // margin-top: 0px;
+    }
+
+    &__btn {
+      font-size: 0.8rem;
+      padding: 6px;
+      border: 1.8px solid #fefefe;
+    }
+
+    &__wording {
+      font-size: 1em;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .core {
+
+    &__tname {
+      font-size: 3.5rem;
+    }
+
+    &__smallname {
+      font-size: 1.15rem;
+    }
+
+    &__btn {
+      font-size: 1rem;
+      padding: 7px;
+    }
+
+    &__wording {
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .core {
+
+    &__tname {
+      font-size: 4rem;
+    }
+
+    &__smallname {
+      font-size: 1.3rem;
+    }
+
+    &__btn {
+      font-size: 1.05rem;
+      padding: 7px;
+      border: 2px solid #fefefe;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .core {
+
+    &__tname {
+      font-size: 5rem;
+    }
+
+    &__smallname {
+      font-size: 1.55rem;
+    }
+
+    &__btn {
+      font-size: 1.2rem;
+      border: 2px solid #fefefe;
+      padding: 9px;
+    }
+
+    &__wording {
+      font-size: 1.4em;
+    }
+  }
 }
