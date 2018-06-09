@@ -9,7 +9,7 @@ import {ContactUsComponent} from '../components/contact-us/contact-us.component'
 const RoutesMap: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
-    {path: 'cources', component: CoursesComponent},
+    {path: 'courses', component: CoursesComponent},
     {path: 'about-us', component: AboutUsComponent},
     {path: 'contact-us', component: ContactUsComponent},
     {path: '**', redirectTo: '/home'}

@@ -20,7 +20,7 @@
         background: url('../assets/images/logo.png');
         width: 85px;
         height: 38.25px;
-        background-size: contain; 
+        background-size: contain;
         // width: 60pt;
         // height: 26.88pt;
     }
@@ -108,17 +108,17 @@
     .menu {
 
         &__phone {
-        font-size: 1em;
-           }
+            font-size: 1em;
+        }
 
-           &__tggfnt {
-        font-size: 34px;
+        &__tggfnt {
+            font-size: 34px;
+        }
     }
-}
 }
 
 @media all and (min-width: 576px) {
     .menu {
-position: static;
-}
+        position: static;
+    }
 }

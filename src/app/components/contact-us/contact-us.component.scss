@@ -1,0 +1,51 @@
+@import '../../../scss/variables.scss';
+
+.contacts {
+  background-color: $back-color;
+  color: $maintext-color;
+
+  &__telicon {
+    width: 50px;
+  }
+
+  &__telitext {
+    color: $btn-color;
+  }
+
+  &__numberblock {
+    font-size: 0.85rem;
+  }
+
+  &__phone {
+    color: $maintext-color;
+
+    &:hover {
+      color: $btn-color;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: $btn-color;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $btn-color;
+      text-decoration: none;
+    }
+  }
+
+  &__mailinp {
+
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: $btn-color;
+    color: $maintext-color;
+  }
+}

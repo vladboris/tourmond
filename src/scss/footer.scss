@@ -1,25 +1,93 @@
-@import 'variables.scss';
+// @import 'variables.scss';
+.footr {
+  overflow-x: hidden;
+  background-color: $maintext-color;
+  font-size: 0.8rem;
+  color: #000000;
 
-.footer-container {
-  height: auto;
+  &__cellfour {
+    min-width: 150px;
+  }
+  &__phone {
+    color: $btn-color;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+    &:hover {
+      color: $btn-color;
+      text-decoration: none;
+    }
 
-  color: $footer-text-color;
-  background-color: $footer-bg-color;
+    &:focus {
+      color: $btn-color;
+      text-decoration: none;
+    }
 
-  p {
-    margin-bottom: 11px;
+    &:active {
+      color: $btn-color;
+      text-decoration: none;
+    }
+  }
 
-    cursor: pointer;
+  &__link {
+    color: #000000;
 
-    a {
-      color: inherit;
+    &:hover {
+      color: $btn-color;
+      text-decoration: none;
+    }
 
-     &:hover {
-       text-decoration: none;
-     }
+    &:focus {
+      color: $btn-color;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $btn-color;
+      text-decoration: none;
+    }
+  }
+}
+
+@media all and (min-width: 360px) and (max-width: 575.99px) {
+  .footr {
+    font-size: 0.9rem;
+    padding-left: 15px;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .footr {
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footr {
+
+    &__scell {
+      min-width: 120px;
+    }
+
+    &__pcell {
+      min-width: 120px;
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .footr {
+
+    &__ccell {
+      min-width: 165px;
+    }
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .footr {
+    font-size: 1.05rem;
+
+    &__ccell {
+      min-width: 240px;
     }
   }
 }
