@@ -21,7 +21,7 @@
                        [ngClass]="{'required': (formInvalid || name.touched) && name.invalid}"
                        type="text" placeholder="Your Name"
                        name="name" [formControl]="contactForm.controls['name']"
-                       [ngModel]="nameVal" required>
+                       required>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1" class="contacts__lbl">Your e-mail address *</label>
