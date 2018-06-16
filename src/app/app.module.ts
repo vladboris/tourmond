@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
+import { FormsModule,
+         ReactiveFormsModule } from '@angular/forms';
 
 // App Modules
 import { AppRoutingModule } from './routes/routing.module';
@@ -29,7 +31,9 @@ import { CoursesComponent } from './components/courses/courses.component';
     AppRoutingModule,
     AppMaterialModule,
     NgbModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

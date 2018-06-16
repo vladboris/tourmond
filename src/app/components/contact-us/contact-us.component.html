@@ -13,23 +13,46 @@
                 <a class="text-right contacts__phone m-0" href="tel:{{ contactNumber }}">{{ contactNumber }}</a>
             </div>
         </div>
-        <form>
+        <form [formGroup]="contactForm"
+              (ngSubmit)="onSubmit(contactForm)">
             <div class="form-group">
                 <label for="formGroupExampleInput" class="contacts__lbl">Your name *</label>
-                <input class="form-control" id="formGroupExampleInput" type="text" placeholder="" required>
+                <input class="form-control" id="formGroupExampleInput"
+                       [ngClass]="{'required': (formInvalid || name.touched) && name.invalid}"
+                       type="text" placeholder="Your Name"
+                       name="name" [formControl]="contactForm.controls['name']"
+                       required>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1" class="contacts__lbl">Your e-mail address *</label>
-                <input type="email" class="form-control contacts__mailinp" id="exampleFormControlInput1" required
-                       placeholder="name@example.com">
+                <input class="form-control contacts__mailinp" id="exampleFormControlInput1"
+                       [ngClass]="{'required': (formInvalid || email.touched) && email.invalid}"
+                       type="email" placeholder="name@example.com"
+                       name="email" [formControl]="contactForm.controls['email']"
+                       required>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput" class="contacts__lbl">Subject *</label>
-                <input class="form-control" id="formGroupExampleInput" type="text" placeholder="" required>
+                <input class="form-control" id="formGroupExampleInput"
+                       [ngClass]="{'required': (formInvalid || subject.touched) && subject.invalid}"
+                       type="text" placeholder="What's you message about ?"
+                       name="subject" [formControl]="contactForm.controls['subject']"
+                       required>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1" class="contacts__lbl">Message *</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" required rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1"
+                          [ngClass]="{'required': (formInvalid || text.touched) && text.invalid}"
+                          rows="3" placeholder="A short description"
+                          name="text" [formControl]="contactForm.controls['text']"
+                          required>
+                </textarea>
+            </div>
+            <div *ngIf="invalidAlert" class="form-group alert alert-danger">
+               Please fill out all required fields!
+            </div>
+            <div *ngIf="formSubmitted" class="form-group alert alert-primary">
+                Mesage successfully sent!
             </div>
             <button class="btn contacts__btn" type="submit">Send message</button>
         </form>
