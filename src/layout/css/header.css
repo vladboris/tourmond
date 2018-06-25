@@ -1,0 +1,51 @@
+.logo {
+  height: 55px;
+  width: 100px; }
+  .logo__svg {
+    width: 100px;
+    height: 45px;
+    pointer-events: none; }
+  .logo__fallback {
+    background: url("../assets/images/logo.png");
+    width: 85px;
+    height: 38.25px;
+    background-size: contain; }
+
+.menu {
+  background-color: #e4ebf0; }
+  .menu__tggsp:hover {
+    color: #55c8bc; }
+  .menu__tggfnt {
+    font-size: 30px; }
+  .menu__tggbtn:hover {
+    outline: none; }
+  .menu__tggbtn:focus {
+    outline: none; }
+  .menu__tggbtn:active {
+    outline: none; }
+  .menu__link {
+    color: #475f7f; }
+    .menu__link:hover {
+      color: #55c8bc; }
+  .menu__phone {
+    color: #475f7f;
+    font-size: 0.85rem; }
+    .menu__phone:hover {
+      color: #55c8bc;
+      text-decoration: none; }
+    .menu__phone:focus {
+      color: #55c8bc;
+      text-decoration: none; }
+    .menu__phone:active {
+      color: #55c8bc;
+      text-decoration: none; }
+
+@media all and (min-width: 360px) {
+  .menu__phone {
+    font-size: 1em; }
+  .menu__tggfnt {
+    font-size: 34px; } }
+
+@media all and (min-width: 576px) {
+  .menu {
+    position: static; } }
