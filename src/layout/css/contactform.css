@@ -1,12 +1,30 @@
 .contacts {
+  overflow-x: hidden;
   background-color: #e4ebf0;
-  color: #475f7f; }
+  color: black; }
   .contacts__telicon {
     width: 50px; }
   .contacts__telitext {
     color: #55c8bc; }
+    .contacts__telitext:hover {
+      color: #475f7f; }
+    .contacts__telitext:focus {
+      color: #55c8bc; }
+    .contacts__telitext:active {
+      color: #55c8bc; }
   .contacts__numberblock {
     font-size: 0.85rem; }
+  .contacts__phone {
+    color: black; }
+    .contacts__phone:hover {
+      color: #55c8bc;
+      text-decoration: none; }
+    .contacts__phone:focus {
+      color: #55c8bc;
+      text-decoration: none; }
+    .contacts__phone:active {
+      color: #55c8bc;
+      text-decoration: none; }
   .contacts__mailinp:focus::-webkit-input-placeholder {
     color: transparent; }
   .contacts__mailinp:focus:-ms-input-placeholder {
@@ -18,3 +36,8 @@
   .contacts__btn {
     background-color: #55c8bc;
     color: #475f7f; }
+
+@media all and (min-width: 360px) and (max-width: 575.99px) {
+  .contacts {
+    padding-left: 15px;
+    padding-right: 15px; } }

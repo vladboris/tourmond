@@ -1,25 +1,37 @@
 @import 'variables.scss';
 
 .contacts {
-background-color: $back-color;
-color: $maintext-color;
+    background-color: $back-color;
+    color: black;
 
-&__telicon {
-    width: 50px;
-}
+    &__telicon {
+        width: 50px;
+    }
 
-&__telitext {
-    color: $btn-color;
-}
+    &__telitext {
+        color: $btn-color;
 
-&__numberblock {
-font-size: 0.85rem;
-}
+        &:hover {
+            color: $maintext-color;
+        }
 
-&__phone {
-        color: $maintext-color;
+        &:focus {
+            color: $btn-color;
+        }
 
-         &:hover {
+        &:active {
+            color: $btn-color;
+        }
+    }
+
+    &__numberblock {
+        font-size: 0.85rem;
+    }
+
+    &__phone {
+        color: black;
+
+        &:hover {
             color: $btn-color;
             text-decoration: none;
         }
@@ -34,18 +46,80 @@ font-size: 0.85rem;
             text-decoration: none;
         }
     }
-    
-&__mailinp {
 
-    &:focus {
-    &::placeholder {
-    color: transparent;
-    }
-    }
-  }
+    &__mailinp {
 
-&__btn {
-    background-color: $btn-color;
-    color: $maintext-color;
+        &:focus {
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    &__btn {
+        background-color: $btn-color;
+        color: $maintext-color; 
+        // font-size: 0.6rem;
+        // padding: 3px;
+
+        &:hover {
+            background-color: $btn-colors;
+            color: $maintext-colors; 
+            outline: none;
+        }
+
+        &:active,
+        &:focus {
+            background-color: $btn-colors;
+            color: $maintext-colors; 
+            outline: none;
+        }
+
+        &:visited {
+            background-color: $btn-colors; 
+            color: $maintext-colors; 
+            outline: none;
+        }
+    }
+}
+
+@media all and (max-width: 575.99px) {
+    .contacts {
+      
+    &__formname {
+        font-size: 1.4rem;
+    }
+
+    &__callform {
+        font-size: 1.25rem;
+    }
+}
+}
+
+@media all and (min-width: 360px) and (max-width: 575.99px) {
+    .contacts {
+        padding-left: 15px;
+        padding-right: 15px;
+
+    &__formname {
+        font-size: 1.6rem;
+    }
+
+    &__callform {
+        font-size: 1.4rem;
+    }
+}
+}
+
+@media all and (min-width: 576px) and (max-width: 767.99px) {
+    .contacts {
+
+    &__formname {
+        font-size: 1.6rem;
+    }
+
+    &__callform {
+        font-size: 1.4rem;
+    }
 }
 }
