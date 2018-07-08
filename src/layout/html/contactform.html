@@ -16,15 +16,15 @@
 </div>
 <script>
     window.onload = (function() {
-        var xhrh = new XMLHttpRequest();
-        xhrh.onreadystatechange = function() {
-            if (xhrh.readyState === 4) {
+        var xhrd = new XMLHttpRequest();
+        xhrd.onreadystatechange = function() {
+            if (xhrd.readyState === 4) {
                 var home = document.getElementById("contact");
-                home.innerHTML += xhrh.responseText
+                home.innerHTML += xhrd.responseText
             }
         };
-        xhrh.open('GET', 'header.html');
-        xhrh.send();
+        xhrd.open('GET', 'header.html');
+        xhrd.send();
 
         var xhrc = new XMLHttpRequest();
         xhrc.onreadystatechange = function() {
@@ -36,15 +36,15 @@
         xhrc.open('GET', 'contact.html');
         xhrc.send();
 
-        var xhrf = new XMLHttpRequest();
-        xhrf.onreadystatechange = function() {
-            if (xhrf.readyState === 4) {
+        var xhrt = new XMLHttpRequest();
+        xhrt.onreadystatechange = function() {
+            if (xhrt.readyState === 4) {
                 var home = document.getElementById("contact");
-                home.innerHTML += xhrf.responseText
+                home.innerHTML += xhrt.responseText
             }
         };
-        xhrf.open('GET', 'footer.html');
-        xhrf.send();
+        xhrt.open('GET', 'footer.html');
+        xhrt.send();
     })
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
