@@ -21,3 +21,22 @@
     .slider__link:active {
       color: #55c8bc;
       text-decoration: none; }
+  .slider__animdown {
+    -webkit-animation: bounce .5s infinite alternate;
+    animation: bounce .5s infinite alternate; }
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }

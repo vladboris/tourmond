@@ -38,4 +38,18 @@ mask-image: -webkit-gradient(linear, left top, right bottom,
             text-decoration: none;
         }
 }
+
+&__animdown {
+    animation: bounce .5s infinite alternate;
+
+    @keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+}
 }
