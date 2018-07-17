@@ -89,6 +89,8 @@
 .core {
   font-family: 'travelingregular', sans-serif;
   color: #fefefe; }
+  .core__backimg {
+    max-height: 660px; }
   .core__tname {
     margin-top: -8px; }
   .core__smallname {

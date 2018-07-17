@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'travelingregular';
+  src: url("../assets/fonts/traveling-webfont.woff2") format("woff2"), url("../assets/fonts/traveling-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.coursesdash {
+  background-color: #e4ebf0; }
+  .coursesdash__cell {
+    background-color: #475f7f; }
+    .coursesdash__cell:hover {
+      background-color: rgba(228, 235, 240, 0.5); }
+  .coursesdash__backimg {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, black), color-stop(0.4499, black), color-stop(0.45, rgba(71, 95, 127, 0.7)), color-stop(0.9, rgba(71, 95, 127, 0.7)));
+    mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, black), color-stop(0.4499, black), color-stop(0.45, rgba(71, 95, 127, 0.7)), color-stop(0.9, rgba(71, 95, 127, 0.7))); }
+  .coursesdash__link {
+    font-family: 'travelingregular', sans-serif;
+    color: #fefefe; }
+    .coursesdash__link:hover {
+      color: #55c8bc;
+      text-decoration: none; }
+    .coursesdash__link:focus {
+      color: #55c8bc;
+      text-decoration: none; }
+    .coursesdash__link:active {
+      color: #55c8bc;
+      text-decoration: none; }

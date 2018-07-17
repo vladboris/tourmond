@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../css/dashslider.css" type="text/css" />
-    <link href="../css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="../css/coursesdash.css" type="text/css" />
 </head>
 <body>
     <div class="container-fluid mx-0 px-0" id="courses">
@@ -44,26 +44,6 @@
         };
         xhrb.open('GET', 'coursesdash.html');
         xhrb.send();
-
-        var xhri = new XMLHttpRequest();
-        xhri.onreadystatechange = function() {
-            if (xhri.readyState === 4) {
-                var home = document.getElementById("courses");
-                home.innerHTML += xhri.responseText
-            }
-        };
-        xhri.open('GET', 'classicdash.html');
-        xhri.send();
-
-        var xhra = new XMLHttpRequest();
-        xhra.onreadystatechange = function() {
-            if (xhra.readyState === 4) {
-                var home = document.getElementById("courses");
-                home.innerHTML += xhra.responseText
-            }
-        };
-        xhra.open('GET', 'shortdash.html');
-        xhra.send();
 
         var xhro = new XMLHttpRequest();
         xhro.onreadystatechange = function() {

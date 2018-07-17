@@ -12,6 +12,7 @@
 background-color: $maintext-color;
 
 	&__backimg {
+        max-height: 660px;
 mask-image: -webkit-gradient(linear, left top, right bottom, 
             color-stop(0.00,  rgba(0,0,0,1)),
             color-stop(0.6499,  rgba(0,0,0,1)),
