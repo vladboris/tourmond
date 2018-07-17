@@ -9,8 +9,12 @@
 }
 
 .core {
-    font-family: 'travelingregular', sans-serif; 
+    font-family: 'travelingregular', sans-serif;
     color: #fefefe;
+
+    &__backimg {
+        max-height: 660px;
+    }
 
     &__tname {
         margin-top: -8px;
@@ -46,7 +50,6 @@
         }
 
         &:visited {
-            border-color: transparent;
             background-color: $btn-color;
             border-color: #fefefe;
             color: #fefefe;
@@ -64,9 +67,9 @@
 @media all and (min-width: 360px) and (max-width: 575.99px) {
     .core {
 
-&__tname {
-        margin-top: -1px;
-    }
+        &__tname {
+            margin-top: -1px;
+        }
 
         &__btn {
             font-size: 0.7rem;
@@ -142,7 +145,7 @@
 
         &__btn {
             font-size: 1.05rem;
-            padding: 7px; 
+            padding: 7px;
             border: 2px solid #fefefe;
         }
     }

@@ -1,0 +1,50 @@
+@import 'variables.scss';
+
+@font-face {
+    font-family: 'travelingregular';
+    src: url('../assets/fonts/traveling-webfont.woff2') format('woff2'),
+    url('../assets/fonts/traveling-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.coursesdash {
+    background-color: $back-color;
+
+    &__cell {
+        background-color: $maintext-color;
+
+        &:hover {
+            background-color: $back-colors;
+        }
+    }
+
+    &__backimg {
+        object-fit: cover;
+        mask-image: -webkit-gradient(linear, left top, right bottom,
+        color-stop(0.00, rgba(0, 0, 0, 1)),
+        color-stop(0.4499, rgba(0, 0, 0, 1)),
+        color-stop(0.45, rgba(71, 95, 127, 0.7)),
+        color-stop(0.90, rgba(71, 95, 127, 0.7)));
+    }
+
+    &__link {
+        font-family: 'travelingregular', sans-serif;
+        color: #fefefe;
+
+        &:hover {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:focus {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: $btn-color;
+            text-decoration: none;
+        }
+    }
+}

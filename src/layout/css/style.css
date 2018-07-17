@@ -1,8 +1,3 @@
-.header {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1em;
-  font-weight: 400; }
-
 .logo {
   height: 55px;
   width: 100px; }
@@ -21,8 +16,7 @@
   .menu__tggsp:hover {
     color: #55c8bc; }
   .menu__tggfnt {
-    font-size: 30px;
-    margin-top: 6px; }
+    font-size: 30px; }
   .menu__tggbtn:hover {
     outline: none; }
   .menu__tggbtn:focus {
@@ -95,6 +89,8 @@
 .core {
   font-family: 'travelingregular', sans-serif;
   color: #fefefe; }
+  .core__backimg {
+    max-height: 660px; }
   .core__tname {
     margin-top: -8px; }
   .core__smallname {
@@ -119,7 +115,6 @@
       color: #fefefe;
       outline: none; }
     .core__btn:visited {
-      border-color: transparent;
       background-color: #55c8bc;
       border-color: #fefefe;
       color: #fefefe;
@@ -185,7 +180,6 @@
     font-size: 1.4em; } }
 
 .footr {
-  overflow-x: hidden;
   background-color: #475f7f;
   font-size: 0.8rem;
   color: #000000; }
@@ -241,15 +235,21 @@
 
 .contacts {
   background-color: #e4ebf0;
-  color: #475f7f; }
+  color: black; }
   .contacts__telicon {
     width: 50px; }
   .contacts__telitext {
     color: #55c8bc; }
+    .contacts__telitext:hover {
+      color: #475f7f; }
+    .contacts__telitext:focus {
+      color: #55c8bc; }
+    .contacts__telitext:active {
+      color: #55c8bc; }
   .contacts__numberblock {
     font-size: 0.85rem; }
   .contacts__phone {
-    color: #475f7f; }
+    color: black; }
     .contacts__phone:hover {
       color: #55c8bc;
       text-decoration: none; }
@@ -270,9 +270,43 @@
   .contacts__btn {
     background-color: #55c8bc;
     color: #475f7f; }
+    .contacts__btn:hover {
+      background-color: #39b1a4;
+      color: #35475e;
+      outline: none; }
+    .contacts__btn:active, .contacts__btn:focus {
+      background-color: #39b1a4;
+      color: #35475e;
+      outline: none; }
+    .contacts__btn:visited {
+      background-color: #39b1a4;
+      color: #35475e;
+      outline: none; }
+
+@media all and (max-width: 575.99px) {
+  .contacts__formname {
+    font-size: 1.4rem; }
+  .contacts__callform {
+    font-size: 1.25rem; } }
+
+@media all and (min-width: 360px) and (max-width: 575.99px) {
+  .contacts {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .contacts__formname {
+      font-size: 1.6rem; }
+    .contacts__callform {
+      font-size: 1.4rem; } }
+
+@media all and (min-width: 576px) and (max-width: 767.99px) {
+  .contacts__formname {
+    font-size: 1.6rem; }
+  .contacts__callform {
+    font-size: 1.4rem; } }
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
   font-weight: 400;
-  background-color: #e4ebf0; }
+  background-color: #e4ebf0;
+  overflow-x: hidden; }
