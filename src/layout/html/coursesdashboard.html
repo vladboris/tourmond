@@ -1,49 +1,59 @@
 <head>
     <meta charset="utf-8">
-    <title>Contact us</title>
+    <title>Courses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../css/contactform.css" type="text/css" />
+    <link rel="stylesheet" href="../css/dashslider.css" type="text/css" />
+    <link rel="stylesheet" href="../css/coursesdash.css" type="text/css" />
 </head>
-
 <body>
-    <div class="container-fluid mx-0 px-0" id="contact">
+    <div class="container-fluid mx-0 px-0" id="courses">
 </div>
 <script>
     window.onload = (function() {
-        var xhrd = new XMLHttpRequest();
-        xhrd.onreadystatechange = function() {
-            if (xhrd.readyState === 4) {
-                var home = document.getElementById("contact");
-                home.innerHTML += xhrd.responseText
+        var xhrr = new XMLHttpRequest();
+        xhrr.onreadystatechange = function() {
+            if (xhrr.readyState === 4) {
+                var home = document.getElementById("courses");
+                home.innerHTML += xhrr.responseText
             }
         };
-        xhrd.open('GET', 'header.html');
-        xhrd.send();
+        xhrr.open('GET', 'header.html');
+        xhrr.send();
 
-        var xhrc = new XMLHttpRequest();
-        xhrc.onreadystatechange = function() {
-            if (xhrc.readyState === 4) {
-                var home = document.getElementById("contact");
-                home.innerHTML += xhrc.responseText
+        var xhrs = new XMLHttpRequest();
+        xhrs.onreadystatechange = function() {
+            if (xhrs.readyState === 4) {
+                var home = document.getElementById("courses");
+                home.innerHTML += xhrs.responseText
             }
         };
-        xhrc.open('GET', 'contact.html');
-        xhrc.send();
+        xhrs.open('GET', 'dashslider.html');
+        xhrs.send();
 
-        var xhrt = new XMLHttpRequest();
-        xhrt.onreadystatechange = function() {
-            if (xhrt.readyState === 4) {
-                var home = document.getElementById("contact");
-                home.innerHTML += xhrt.responseText
+        var xhrb = new XMLHttpRequest();
+        xhrb.onreadystatechange = function() {
+            if (xhrb.readyState === 4) {
+                var home = document.getElementById("courses");
+                home.innerHTML += xhrb.responseText
             }
         };
-        xhrt.open('GET', 'footer.html');
-        xhrt.send();
+        xhrb.open('GET', 'coursesdash.html');
+        xhrb.send();
+
+        var xhro = new XMLHttpRequest();
+        xhro.onreadystatechange = function() {
+            if (xhro.readyState === 4) {
+                var home = document.getElementById("courses");
+                home.innerHTML += xhro.responseText
+            }
+        };
+        xhro.open('GET', 'footer.html');
+        xhro.send();
     })
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
