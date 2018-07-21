@@ -22,6 +22,8 @@
     .slider__link:active {
       color: #55c8bc;
       text-decoration: none; }
+  .slider__name {
+    font-size: 0.1 rem; }
   .slider__animdown {
     -webkit-animation: bounce .5s infinite alternate;
     animation: bounce .5s infinite alternate; }

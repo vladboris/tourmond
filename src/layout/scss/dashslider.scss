@@ -40,8 +40,13 @@ mask-image: -webkit-gradient(linear, left top, right bottom,
         }
 }
 
+&__name {
+font-size: 0.1 rem;
+}
+
 &__animdown {
     animation: bounce .5s infinite alternate;
+// font-size: 0.2rem;
 
     @keyframes bounce {
   from {
@@ -53,4 +58,29 @@ mask-image: -webkit-gradient(linear, left top, right bottom,
   }
 }
 }
+}
+
+@media all and (min-width: 360px) {
+    .slider {
+    }
+}
+
+@media all and (min-width: 576px) {
+    .slider {
+    }
+}
+
+@media all and (min-width: 768px) {
+    .slider {
+    }
+}
+
+@media all and (min-width: 992px) {
+    .slider {
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .slider {
+    }
 }
