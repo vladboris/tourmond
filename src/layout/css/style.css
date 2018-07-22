@@ -13,10 +13,17 @@
 
 .menu {
   background-color: #e4ebf0; }
+  .menu__svg {
+    width: 30px;
+    height: 26.25px;
+    pointer-events: none; }
+  .menu__fallback {
+    background: url("../assets/images/burger.png");
+    width: 30px;
+    height: 26.25px;
+    background-size: contain; }
   .menu__tggsp:hover {
     color: #55c8bc; }
-  .menu__tggfnt {
-    font-size: 30px; }
   .menu__tggbtn:hover {
     outline: none; }
   .menu__tggbtn:focus {
@@ -43,8 +50,12 @@
 @media all and (min-width: 360px) {
   .menu__phone {
     font-size: 1em; }
-  .menu__tggfnt {
-    font-size: 34px; } }
+  .menu__svg {
+    width: 34.286px;
+    height: 30px; }
+  .menu__fallback {
+    width: 34.286px;
+    height: 30px; } }
 
 @media all and (min-width: 576px) {
   .menu {
