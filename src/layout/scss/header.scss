@@ -23,16 +23,24 @@
 .menu {
     background-color: $back-color;
 
+   &__svg {
+        width: 30px;
+        height: 26.25px;
+        pointer-events: none;
+    }
+
+        &__fallback {
+        background: url('../assets/images/burger.png');
+        width: 30px;
+        height: 26.25px;
+        background-size: contain; 
+    }
+
     &__tggsp {
 
         &:hover {
             color: $btn-color;
         }
-    }
-
-    &__tggfnt {
-        font-size: 30px;
-        // margin-top: 6px;
     }
 
     &__tggbtn {
@@ -107,9 +115,16 @@
         font-size: 1em;
            }
 
-           &__tggfnt {
-        font-size: 34px;
+   &__svg {
+        width: 34.286px;
+        height: 30px;
     }
+
+           &__fallback {
+        width: 34.286px;
+        height: 30px;
+    }
+
 }
 }
 
