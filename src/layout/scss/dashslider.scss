@@ -9,22 +9,23 @@
 }
 
 .slider {
-background-color: $maintext-color;
+    background-color: $maintext-color;
 
-	&__backimg {
+    &__backimg {
         max-height: 660px;
-mask-image: -webkit-gradient(linear, left top, right bottom, 
-            color-stop(0.00,  rgba(0,0,0,1)),
-            color-stop(0.6499,  rgba(0,0,0,1)),
-            color-stop(0.65,  rgba(71,95,127,0.7)),
-            color-stop(1.00,  rgba(71,95,127,0.7)));
-	}
+        mask-image: -webkit-gradient(linear, left top, right bottom,
+        color-stop(0.00, rgba(0, 0, 0, 1)),
+        color-stop(0.6399, rgba(0, 0, 0, 1)),
+        color-stop(0.64, rgba(71, 95, 127, 0.7)),
+        color-stop(1.00, rgba(71, 95, 127, 0.7)));
+    }
 
-	&__link {
-		font-family: 'travelingregular', sans-serif; 
-		color: #fefefe;
+    &__link {
+        font-family: 'travelingregular', sans-serif;
+        color: #fefefe;
+        width: 39%;
 
-	&:hover {
+        &:hover {
             color: $btn-color;
             text-decoration: none;
         }
@@ -38,49 +39,88 @@ mask-image: -webkit-gradient(linear, left top, right bottom,
             color: $btn-color;
             text-decoration: none;
         }
-}
+    }
 
-&__name {
-font-size: 0.1 rem;
-}
+    &__text {
+        font-size: 1rem;
+    }
 
-&__animdown {
-    animation: bounce .5s infinite alternate;
-// font-size: 0.2rem;
+    &__animdown {
+        animation: bounce .5s infinite alternate; // font-size: 0.2rem;
+        @keyframes bounce {
+            from {
+                transform: translateY(-10px);
+            }
 
-    @keyframes bounce {
-  from {
-    transform: translateY(-10px);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-}
+            to {
+                transform: translateY(0);
+            }
+        }
+    }
 }
 
 @media all and (min-width: 360px) {
     .slider {
+
+        &__text {
+            font-size: 1.1rem;
+            padding-bottom: 5px;
+        }
+
+        &__link {
+            width: 35%;
+        }
     }
 }
 
 @media all and (min-width: 576px) {
     .slider {
+
+        &__text {
+            font-size: 1.5rem;
+        }
+
+        &__link {
+            width: 30%;
+        }
     }
 }
 
 @media all and (min-width: 768px) {
     .slider {
+
+        &__text {
+            font-size: 2rem;
+        }
+
+        &__link {
+            width: 30%;
+        }
     }
 }
 
 @media all and (min-width: 992px) {
     .slider {
+
+        &__text {
+            font-size: 2.3rem;
+        }
+
+        &__link {
+            width: 28%;
+        }
     }
 }
 
 @media all and (min-width: 1200px) {
     .slider {
+
+        &__text {
+            font-size: 2.4rem;
+        }
+
+        &__link {
+            width: 45%;
+        }
     }
 }
