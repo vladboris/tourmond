@@ -11,6 +11,10 @@
 .coursesdash {
     background-color: $back-color;
 
+    &__type {
+        font-size: 1.4rem;
+    }
+
     &__cell {
         background-color: $maintext-color;
 
@@ -31,6 +35,7 @@
     &__link {
         font-family: 'travelingregular', sans-serif;
         color: #fefefe;
+        width: 55%;
 
         &:hover {
             color: $btn-color;
@@ -47,29 +52,97 @@
             text-decoration: none;
         }
     }
+
+    &__naming {
+        font-size: 1.1rem;
+    }
+
+    &__destination {
+        font-size: 0.8rem;
+    }
 }
 
 @media all and (min-width: 360px) {
     .coursesdash {
+
+        &__type {
+            font-size: 1.5rem;
+        }
+
+        &__link {
+            width: 54%;
+        }
+
+        &__naming {
+            font-size: 1.1rem;
+        }
+
+        &__destination {
+            font-size: 0.9rem;
+        }
     }
 }
 
 @media all and (min-width: 576px) {
     .coursesdash {
+
+        &__type {
+            font-size: 1.8rem;
+        }
+
+        &__link {
+            width: 53%;
+        }
+
+        &__naming {
+            font-size: 1.2rem;
+        }
     }
 }
 
 @media all and (min-width: 768px) {
     .coursesdash {
+
+        &__type {
+            font-size: 2.1rem;
+        }
+
+        &__link {
+            width: 52%;
+        }
+
+        &__naming {
+            font-size: 1.3rem;
+        }
+
+        &__destination {
+            font-size: 1rem;
+        }
     }
 }
 
 @media all and (min-width: 992px) {
     .coursesdash {
+
+        &__type {
+            font-size: 2.3rem;
+        }
     }
 }
 
 @media all and (min-width: 1200px) {
     .coursesdash {
+
+        &__type {
+            font-size: 2.5rem;
+        }
+
+&__link {
+            width: 53%;
+        }
+
+        &__naming {
+            font-size: 1.4rem;
+        }
     }
 }
