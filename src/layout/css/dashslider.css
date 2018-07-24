@@ -8,11 +8,12 @@
   background-color: #475f7f; }
   .slider__backimg {
     max-height: 660px;
-    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, black), color-stop(0.6499, black), color-stop(0.65, rgba(71, 95, 127, 0.7)), color-stop(1, rgba(71, 95, 127, 0.7)));
-    mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, black), color-stop(0.6499, black), color-stop(0.65, rgba(71, 95, 127, 0.7)), color-stop(1, rgba(71, 95, 127, 0.7))); }
+    -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, black), color-stop(0.6399, black), color-stop(0.64, rgba(71, 95, 127, 0.7)), color-stop(1, rgba(71, 95, 127, 0.7)));
+    mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, black), color-stop(0.6399, black), color-stop(0.64, rgba(71, 95, 127, 0.7)), color-stop(1, rgba(71, 95, 127, 0.7))); }
   .slider__link {
     font-family: 'travelingregular', sans-serif;
-    color: #fefefe; }
+    color: #fefefe;
+    width: 39%; }
     .slider__link:hover {
       color: #55c8bc;
       text-decoration: none; }
@@ -22,8 +23,8 @@
     .slider__link:active {
       color: #55c8bc;
       text-decoration: none; }
-  .slider__name {
-    font-size: 0.1 rem; }
+  .slider__type {
+    font-size: 1rem; }
   .slider__animdown {
     -webkit-animation: bounce .5s infinite alternate;
     animation: bounce .5s infinite alternate; }
@@ -43,3 +44,34 @@
   to {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
+
+@media all and (min-width: 360px) {
+  .slider__type {
+    font-size: 1.1rem;
+    padding-bottom: 5px; }
+  .slider__link {
+    width: 35%; } }
+
+@media all and (min-width: 576px) {
+  .slider__type {
+    font-size: 1.5rem; }
+  .slider__link {
+    width: 30%; } }
+
+@media all and (min-width: 768px) {
+  .slider__type {
+    font-size: 2rem; }
+  .slider__link {
+    width: 30%; } }
+
+@media all and (min-width: 992px) {
+  .slider__type {
+    font-size: 2.3rem; }
+  .slider__link {
+    width: 28%; } }
+
+@media all and (min-width: 1200px) {
+  .slider__type {
+    font-size: 2.4rem; }
+  .slider__link {
+    width: 45%; } }
