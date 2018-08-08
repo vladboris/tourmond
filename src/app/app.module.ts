@@ -16,6 +16,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { DashSliderComponent } from './components/courses/dashslider/dashslider.component';
+import { CourseCardComponent } from './components/courses/course-card/course-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CoursesComponent } from './components/courses/courses.component';
     HomeComponent,
     AboutUsComponent,
     ContactUsComponent,
-    CoursesComponent
+    CoursesComponent,
+    DashSliderComponent,
+    CourseCardComponent
   ],
   imports: [
     BrowserModule,

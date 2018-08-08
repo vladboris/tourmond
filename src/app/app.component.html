@@ -1,10 +1,9 @@
 <!-- <header class="header"> -->
 <nav class="navbar sticky-top navbar-expand-lg menu">
-    <button class="navbar-toggler pb-3 menu__tggbtn" type="button"
-            data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon b-inline-block menu__tggsp"><i class="fas fa-bars menu__tggfnt"></i></span>
+    <button class="navbar-toggler pb-2 menu__tggbtn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon b-inline-block menu__tggsp"><object class="menu__svg" type="image/svg+xml" data="../assets/svg/burger.svg">
+                <div class="menu__fallback"></div>
+            </object></span>
     </button>
     <a class="navbar-brand d-lg-none logo" routerLink="/home">
         <object class="logo__svg" type="image/svg+xml" data="../assets/svg/logo.svg">
@@ -70,7 +69,7 @@
                 <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-youtube"></i> youtube</p></a>
             </div>
             <div class="col-6 footr__cell footr__ccell col-md-3 my-3 my-sm-4 my-md-5 mr-lg-5 ml-xl-3 footr__cellfour">
-                <h5 class="text-capitalize">Contact</h5>
+                <h5 class="text-capitalize"><a class="footr__link" routerLink="/contact-us">Contact</a></h5>
                 <p class="font-weight-bold text-capitalize my-0">Tourmond adventure</p>
                 <p class="my-0 pr-1 pr-sm-0">{{ address }}</p>
                 <p class="my-0"><a class="text-right footr__phone m-0" href="tel:+17738773307">{{ phoneNumber }}</a></p>

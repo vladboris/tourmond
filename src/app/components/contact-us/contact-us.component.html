@@ -1,15 +1,15 @@
 <section class="row contacts">
     <div id="contact"
-         class="contacts__cells px-4 px-sm-0 col-sm-10 offset-sm-1 col-md-8 offset-md-2 mb-4 my-sm-4 mb-md-5 col-12">
-        <h2 class="font-weight-bold">Contact</h2>
+         class="contacts__cells px-4 px-sm-0 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 my-3 mt-md-4 mb-sm-4 mb-md-5 col-12">
+        <h2 class="font-weight-bold contacts__formname">Contact</h2>
         <hr class="mb-3 contacts__hr">
-        <h3 class="mb-3">Call us</h3>
+        <h3 class="mb-3 contacts__callform">Call us</h3>
         <div class="contacts__telblock d-flex  justify-content-sm-start align-items-sm-center mb-2">
             <div class="contacts__telicon">
-                <a href="tel:{{ contactNumber }}"><i class="material-icons contacts__telitext">call_black</i></a>
+                <a href="tel:{{ contactNumber }}" class="contacts__telitext"><i class="fa fa-phone fa-2x"></i></a>
             </div>
             <div class="contacts__numberblock">
-                <p class="text-capitalize m-0">Tourmond adventure</p>
+                <p class="text-capitalize m-0 font-weight-bold">Tourmond adventure</p>
                 <a class="text-right contacts__phone m-0" href="tel:{{ contactNumber }}">{{ contactNumber }}</a>
             </div>
         </div>

@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'travelingregular';
   src: url('../../../assets/fonts/traveling-webfont.woff2') format('woff2'),
-       url('../../../assets/fonts/traveling-webfont.woff') format('woff');
+  url('../../../assets/fonts/traveling-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -11,6 +11,10 @@
 .core {
   font-family: 'travelingregular', sans-serif;
   color: #fefefe;
+
+  &__backimg {
+    max-height: 660px;
+  }
 
   &__tname {
     margin-top: -8px;
@@ -46,7 +50,6 @@
     }
 
     &:visited {
-      border-color: transparent;
       background-color: $btn-color;
       border-color: #fefefe;
       color: #fefefe;
@@ -58,6 +61,8 @@
     font-size: 0.9rem;
   }
 }
+
+
 
 @media all and (min-width: 360px) and (max-width: 575.99px) {
   .core {
