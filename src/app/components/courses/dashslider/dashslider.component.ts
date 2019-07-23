@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,
+         Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'dashslider',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashslider.component.scss']
 })
 export class DashSliderComponent  implements OnInit {
+  @Output() seeTripsClick = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClickSeeTrips() : void {
+    this.seeTripsClick.emit();
   }
 
 }

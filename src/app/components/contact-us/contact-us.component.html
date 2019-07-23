@@ -14,47 +14,51 @@
             </div>
         </div>
         <form [formGroup]="contactForm"
-              (ngSubmit)="onSubmit(contactForm)">
+              (ngSubmit)="onSubmit()"
+               autocomplete="off">
             <div class="form-group">
-                <label for="formGroupExampleInput" class="contacts__lbl">Your name *</label>
-                <input class="form-control" id="formGroupExampleInput"
+                <label for="formGroupInputName" class="contacts__lbl">Your name *</label>
+                <input class="form-control" id="formGroupInputName"
                        [ngClass]="{'required': (formInvalid || name.touched) && name.invalid}"
                        type="text" placeholder="Your Name"
                        name="name" [formControl]="contactForm.controls['name']"
                        required>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1" class="contacts__lbl">Your e-mail address *</label>
-                <input class="form-control contacts__mailinp" id="exampleFormControlInput1"
+                <label for="formGroupInputEmail" class="contacts__lbl">Your e-mail address *</label>
+                <input class="form-control contacts__mailinp" id="formGroupInputEmail"
                        [ngClass]="{'required': (formInvalid || email.touched) && email.invalid}"
                        type="email" placeholder="name@example.com"
                        name="email" [formControl]="contactForm.controls['email']"
                        required>
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput" class="contacts__lbl">Subject *</label>
-                <input class="form-control" id="formGroupExampleInput"
+                <label for="formGroupInputSubject" class="contacts__lbl">Subject *</label>
+                <input class="form-control" id="formGroupInputSubject"
                        [ngClass]="{'required': (formInvalid || subject.touched) && subject.invalid}"
                        type="text" placeholder="What's you message about ?"
                        name="subject" [formControl]="contactForm.controls['subject']"
                        required>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlTextarea1" class="contacts__lbl">Message *</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1"
+                <label for="formGroupTextareaText" class="contacts__lbl">Message *</label>
+                <textarea class="form-control" id="formGroupTextareaText"
                           [ngClass]="{'required': (formInvalid || text.touched) && text.invalid}"
                           rows="3" placeholder="A short description"
                           name="text" [formControl]="contactForm.controls['text']"
                           required>
                 </textarea>
             </div>
+            <div *ngIf="invalidRequest" class="form-group alert alert-danger">
+                Form hasn't submitted. An unexpected error occurred! Please try again later.
+            </div>
             <div *ngIf="invalidAlert" class="form-group alert alert-danger">
                Please fill out all required fields!
             </div>
             <div *ngIf="formSubmitted" class="form-group alert alert-primary">
-                Mesage successfully sent!
+                Message successfully sent!
             </div>
-            <button class="btn contacts__btn" type="submit">Send message</button>
+            <button type="submit" class="btn contacts__btn" >Send message</button>
         </form>
     </div>
 </section>

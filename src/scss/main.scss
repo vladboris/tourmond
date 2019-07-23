@@ -9,11 +9,20 @@
 }
 
 .core {
+  //max-width: $main-pic-max-width;
+  margin: 0 auto;
+
   font-family: 'travelingregular', sans-serif;
   color: #fefefe;
 
+  background-image: url(../../../assets/images/MainFrontView.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 670px;
+
   &__backimg {
-    max-height: 660px;
+    max-height: $main-pic-max-height;
   }
 
   &__tname {

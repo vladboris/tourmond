@@ -1,0 +1,40 @@
+{
+  "cards": [
+    {
+      "name": "Mt Elbrus",
+      "country": "Russia",
+      "img": "Coursesdash 4 Elbrus.jpg",
+      "details": {
+        "title": "Mt Elbrus - Russia",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit tempus dui quis semper. Suspendisse nisl nisi, interdum in bibendum vestibulum, tristique id justo. Proin odio risus, aliquet varius sollicitudin in, congue quis augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vel cursus orci. Vivamus volutpat condimentum turpis, sed aliquet est ullamcorper ut. Sed condimentum lorem at lobortis tempor. Etiam vitae quam ut neque tempor mattis ac at turpis. Nam sodales enim in justo pulvinar bibendum."
+      }
+    },
+    {
+      "name": "Kilimanjaro",
+      "country": "Tanzania",
+      "img": "Coursesdash 6 Kilimanjaro.jpg",
+      "details": {
+        "title": "Kilimanjaro - Tanzania",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit tempus dui quis semper. Suspendisse nisl nisi, interdum in bibendum vestibulum, tristique id justo. Proin odio risus, aliquet varius sollicitudin in, congue quis augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vel cursus orci. Vivamus volutpat condimentum turpis, sed aliquet est ullamcorper ut. Sed condimentum lorem at lobortis tempor. Etiam vitae quam ut neque tempor mattis ac at turpis. Nam sodales enim in justo pulvinar bibendum."
+      }
+    },
+    {
+      "name": "Everest Base Camp",
+      "country": "Nepal",
+      "img": "Coursesdash 7 Everest.jpg",
+      "details": {
+        "title": "Everest Base Camp - Nepal",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit tempus dui quis semper. Suspendisse nisl nisi, interdum in bibendum vestibulum, tristique id justo. Proin odio risus, aliquet varius sollicitudin in, congue quis augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vel cursus orci. Vivamus volutpat condimentum turpis, sed aliquet est ullamcorper ut. Sed condimentum lorem at lobortis tempor. Etiam vitae quam ut neque tempor mattis ac at turpis. Nam sodales enim in justo pulvinar bibendum."
+      }
+    },
+    {
+      "name": "Mera Peak",
+      "country": "Nepal",
+      "img": "Coursesdash 5 Mera.jpg",
+      "details": {
+        "title": "Mera Peak - Nepal",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit tempus dui quis semper. Suspendisse nisl nisi, interdum in bibendum vestibulum, tristique id justo. Proin odio risus, aliquet varius sollicitudin in, congue quis augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vel cursus orci. Vivamus volutpat condimentum turpis, sed aliquet est ullamcorper ut. Sed condimentum lorem at lobortis tempor. Etiam vitae quam ut neque tempor mattis ac at turpis. Nam sodales enim in justo pulvinar bibendum."
+      }
+    }
+  ]
+}

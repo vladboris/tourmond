@@ -5,6 +5,10 @@
 @import 'footer.scss';
 @import 'contactform.scss';
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1em;

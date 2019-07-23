@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpHeaders } from '@angular/common/http';
+import { HttpClientService } from '../../services/httpclient.service';
+
+import { IContactForm } from '../../models/models';
 
 import { phoneNumber } from '../../constants';
+import { aws_service_contactform } from '../../constants';
 
 import {  FormControl,
           FormGroup,
@@ -24,51 +29,70 @@ export class ContactUsComponent implements OnInit {
   public text: AbstractControl;
 
   public invalidAlert: boolean;
+  public invalidRequest: boolean;
   public formInvalid: boolean;
   public formSubmitted: boolean;
 
-  constructor(formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,
+              private http : HttpClientService) {
     this.contactNumber = phoneNumber;
-
-    this.contactForm = formBuilder.group({
-        'name': ['', Validators.required],
-        'email': ['', Validators.required],
-        'subject': ['', Validators.required],
-        'text': ['', Validators.required]
-    });
-
-    this.name = this.contactForm.controls['name'];
-    this.email = this.contactForm.controls['email'];
-    this.subject = this.contactForm.controls['subject'];
-    this.text = this.contactForm.controls['text'];
-
-    this.invalidAlert = false;
-    this.formInvalid = false;
-    this.formSubmitted = false;
   }
 
   ngOnInit() {
+      this.contactForm = this.formBuilder.group({
+          'name': [''],
+          'email': [''],
+          'subject': [''],
+          'text': [''],
+      });
 
+      this.name = this.contactForm.controls['name'];
+      this.email = this.contactForm.controls['email'];
+      this.subject = this.contactForm.controls['subject'];
+      this.text = this.contactForm.controls['text'];
+
+      this.invalidAlert = false;
+      this.formInvalid = false;
+      this.formSubmitted = false;
+      this.invalidRequest = false;
   }
 
-  public onSubmit(form: any): void {
-      if(form.invalid) {
+  public onSubmit(): void {
+      if(this.contactForm.invalid) {
+          this.invalidRequest = false;
           this.formInvalid = true;
           this.invalidAlert = true;
-
-          setTimeout(() => {
-              this.invalidAlert = false;
-              }, 5000);
-      } else {
+          this.contactForm.reset();
+      } else if(this.contactForm.valid) {
+          this.invalidRequest = false;
           this.formInvalid = false;
           this.invalidAlert = false;
-          this.formSubmitted = true;
-          setTimeout(() => {
-              this.formSubmitted = false;
-          }, 10000);
 
-      // Form Submit Logic
-        form.reset();
+          let httpOptions = {
+              headers: new HttpHeaders({
+                  'Content-Type': 'application/json',
+              }),
+              responseType: 'text',
+          };
+          let body: IContactForm = {
+              name: this.name.value,
+              email: this.email.value,
+              subject: this.subject.value,
+              text: this.text.value,
+          };
+
+          this.http.post(`${aws_service_contactform}/v1/contactform`,
+                            JSON.stringify(body),
+                            httpOptions
+          ).subscribe( (res: any) => {
+              console.log(res);
+
+              this.formSubmitted = true;
+              this.contactForm.reset();
+          }, (err) => {
+              this.invalidRequest = true;
+              this.contactForm.reset();
+          });
       }
   }
 }

@@ -11,7 +11,7 @@
         </object>
     </a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand d-lg-inline-block d-none aling-self-end logo" routerLink="/home">
+        <a class="navbar-brand d-lg-inline-block d-none align-self-end logo" routerLink="/home">
             <object class="logo__svg" type="image/svg+xml" data="../assets/svg/logo.svg">
                 <div class="logo__fallback"></div>
             </object>
@@ -20,18 +20,21 @@
             <li class="nav-item active menu__item">
                 <a class="nav-link text-uppercase menu__link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
             </li>
+           <!-- <li class="nav-item menu__item">
+                <a class="nav-link text-uppercase menu__link menu-apply" routerLink="/apply">Membership</a>
+            </li>-->
             <li class="nav-item menu__item menu__underli">
                 <a class="nav-link text-uppercase menu__link" routerLink="/courses">Cources</a>
             </li>
-            <li class="nav-item menu__item">
+            <!--<li class="nav-item menu__item">
                 <a class="nav-link text-uppercase menu__link" routerLink="/about-us">About us</a>
-            </li>
-            <li class="nav-item menu__item">
+            </li>-->
+          <!--  <li class="nav-item menu__item">
                 <a class="nav-link text-uppercase menu__link" routerLink="/contact-us">Contact us</a>
-            </li>
+            </li>-->
         </ul>
     </div>
-    <a class="text-right menu__phone mb-0" href="tel:+17738773307">{{ phoneNumber }}</a>
+    <a class="text-right menu__phone mb-0" [href]="'tel:' + phoneNumber">{{ phoneNumber }}</a>
 </nav>
 <!-- </header> -->
 
