@@ -5,7 +5,7 @@ import {HomeComponent} from '../components/home/home.component';
 // import {AboutUsComponent} from '../components/about-us/about-us.component';
 import {CoursesComponent} from '../components/courses/courses.component';
 // import {ContactUsComponent} from '../components/contact-us/contact-us.component';
-import {ApplyComponent} from '../components/apply/apply.component';
+// import {ApplyComponent} from '../components/apply/apply.component';
 
 const RoutesMap: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},

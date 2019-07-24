@@ -34,7 +34,7 @@
             </li>-->
         </ul>
     </div>
-    <a class="text-right menu__phone mb-0" [href]="'tel:' + phoneNumber">{{ phoneNumber }}</a>
+    <a class="text-right menu__phone mb-0" [href]="'tel:' + phoneNumber[1]">{{ phoneNumber[0] }}</a>
 </nav>
 <!-- </header> -->
 
@@ -48,17 +48,17 @@
             <div class="col-6 footr__cell footr__acell my-3 my-sm-4 my-md-5 ml-lg-5">
                 <h5 class="text-capitalize">About us</h5>
                 <a class="footr__link" routerLink="/home"><p class="my-0">Home</p></a>
-                <a class="footr__link" routerLink="."><p class="my-0">Blog</p></a>
-                <a class="footr__link" routerLink="."><p class="my-0">Privacy policy and terms</p></a>
-                <a class="footr__link" routerLink="."><p class="my-0">Reviews</p></a>
+                <!--<a class="footr__link" routerLink="."><p class="my-0">Blog</p></a>-->
+                <a class="footr__link" (click)="openModal(terms)"><p class="my-0">Privacy policy and terms</p></a>
+                <!--<a class="footr__link" routerLink="."><p class="my-0">Reviews</p></a>-->
             </div>
-            <div class="col-6 footr__cell footr__pcell col-md-3 my-3 my-sm-4 my-md-5">
+           <!-- <div class="col-6 footr__cell footr__pcell col-md-3 my-3 my-sm-4 my-md-5">
                 <h5 class="text-capitalize">Partners</h5>
                 <p class="my-0">Partner 1</p>
                 <p class="my-0">Partner 2</p>
                 <p class="my-0">Partner 3</p>
                 <p class="my-0">Partner 4</p>
-            </div>
+            </div>-->
         </div>
     </div>
 
@@ -72,11 +72,12 @@
                 <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-youtube"></i> youtube</p></a>
             </div>
             <div class="col-6 footr__cell footr__ccell col-md-3 my-3 my-sm-4 my-md-5 mr-lg-5 ml-xl-3 footr__cellfour">
-                <h5 class="text-capitalize"><a class="footr__link" routerLink="/contact-us">Contact</a></h5>
+                <!--<h5 class="text-capitalize"><a class="footr__link" routerLink="/contact-us">Contact</a></h5>-->
+                <h5 class="text-capitalize"><a class="footr__link" [href]="'mailto:' + email">Contact</a></h5>
                 <p class="font-weight-bold text-capitalize my-0">Tourmond adventure</p>
                 <p class="my-0 pr-1 pr-sm-0">{{ address }}</p>
-                <p class="my-0"><a class="text-right footr__phone m-0" href="tel:+17738773307">{{ phoneNumber }}</a></p>
-                <p class="my-0"><a class="text-right footr__phone m-0" href="mailto:randy.mcadams@tourmond.com">Email us</a></p>
+                <p class="my-0"><a class="text-right footr__phone m-0" [href]="'tel:' + phoneNumber[1]">{{ phoneNumber[0] }}</a></p>
+                <p class="my-0"><a class="text-right footr__phone m-0" [href]="'mailto:' + email">Email us</a></p>
             </div>
         </div>
     </div>

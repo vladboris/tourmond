@@ -20,7 +20,7 @@ import {  FormControl,
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent implements OnInit {
-  public contactNumber: string;
+  public contactNumber: Array<string>;
   public contactForm: FormGroup;
 
   public name: AbstractControl;
@@ -85,8 +85,6 @@ export class ContactUsComponent implements OnInit {
                             JSON.stringify(body),
                             httpOptions
           ).subscribe( (res: any) => {
-              console.log(res);
-
               this.formSubmitted = true;
               this.contactForm.reset();
           }, (err) => {

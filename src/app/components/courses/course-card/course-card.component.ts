@@ -19,7 +19,7 @@ import { email } from '../../../constants';
     <div class="modal-footer">
       <!--<button type="button" class="pull-left btn btn-info font-weight-bold text-uppercase " 
               routerLink="/apply" (click)="activeModal.close('Close click')">Join</button>-->
-        <a type="button" class="pull-left btn btn-info font-weight-bold text-uppercase"
+        <a class="pull-left btn btn-info font-weight-bold text-uppercase"
                 [href]="'mailto:' + email">Contact</a>
       <button type="button" class="btn btn-outline-secondary" (click)="activeModal.close('Close click')">Close</button>
     </div>
@@ -89,7 +89,6 @@ export class CourseCardComponent implements OnInit {
     }
 
   public focus() : void {
-      console.log('FOCUS');
       this.trips.nativeElement.focus();
   }
 }

@@ -15,7 +15,7 @@ export class CoursesComponent implements OnInit {
   }
 
   public goToTrips(): void {
-      console.log('goToTrips');
+      // console.log('goToTrips');
       this.cardsChild.focus();
   }
 

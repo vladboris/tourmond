@@ -9,7 +9,7 @@ import {
     HashLocationStrategy,
     // PathLocationStrategy
 } from '@angular/common';
-import {APP_BASE_HREF} from '@angular/common'
+import {APP_BASE_HREF} from '@angular/common';
 
 // App Modules
 import { AppRoutingModule } from './routes/routing.module';
@@ -31,21 +31,23 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { DashSliderComponent } from './components/courses/dashslider/dashslider.component';
 import { CourseCardComponent,
          NgbdModalContent} from './components/courses/course-card/course-card.component';
+import { NgbdModalTerms } from './modal-terms-conditions/modal-terms-conditions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NgbdModalTerms,
     HomeComponent,
-    // AboutUsComponent,
-    // ContactUsComponent,
-    // ApplyComponent,
     CoursesComponent,
+  // AboutUsComponent,
+  // ContactUsComponent,
+  // ApplyComponent,
     DashSliderComponent,
     CourseCardComponent,
     NgbdModalContent,
     SafePipe
   ],
-  entryComponents: [NgbdModalContent],
+  entryComponents: [NgbdModalContent, NgbdModalTerms],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
