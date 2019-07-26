@@ -14,9 +14,8 @@ export class CoursesComponent implements OnInit {
   ngOnInit() {
   }
 
-  public goToTrips(): void {
-      // console.log('goToTrips');
-      this.cardsChild.focus();
+  public goToTrips(el: HTMLElement): void {
+    el.scrollIntoView({behavior: 'smooth'});
+    this.cardsChild.focus();
   }
-
 }

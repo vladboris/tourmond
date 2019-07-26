@@ -14,8 +14,7 @@ export class DashSliderComponent  implements OnInit {
   ngOnInit() {
   }
 
-  onClickSeeTrips() : void {
+  public onClickSeeTrips() : void {
     this.seeTripsClick.emit();
   }
-
 }
