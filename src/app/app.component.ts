@@ -10,8 +10,11 @@ import { NgbdModalTerms } from './modal-terms-conditions/modal-terms-conditions.
 
 import { phoneNumber,
          address,
-         email
-        } from './constants';
+         email,
+         instagram,
+         facebook,
+         skype,
+} from './constants';
 
 interface Terms {
     title: string,
@@ -24,11 +27,16 @@ interface Terms {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+    // contact information
     public phoneNumber: Array<string>;
     public address: string;
     public email: string;
-    public terms: Terms;
+    // social media
+    public instagram: string;
+    public facebook: string;
+    public skype: string;
 
+    public terms: Terms;
     private modalRef: any;
 
     constructor(private router: Router,
@@ -37,6 +45,10 @@ export class AppComponent implements OnInit {
         this.phoneNumber = phoneNumber;
         this.address = address;
         this.email = email;
+
+        this.instagram = instagram;
+        this.facebook = facebook;
+        this.skype = skype;
     }
 
     ngOnInit() {

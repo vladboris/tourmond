@@ -66,10 +66,10 @@
         <div class="row justify-content-around justify-content-lg-center pr-xl-5">
             <div class="col-6 footr__cell footr__scell col-md-3 my-3 my-sm-4 my-md-5 mr-lg-5">
                 <h5 class="text-capitalize">Social</h5>
-                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-facebook"></i> facebook</p></a>
-                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-instagram"></i> instagram</p></a>
-                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-skype"></i> skype</p></a>
-                <a href="#" class="footr__link"><p class="my-0"><i class="fa fa-youtube"></i> youtube</p></a>
+                <a [href]="facebook" class="footr__link" target="_blank"><p class="my-0"><i class="fa fa-facebook"></i> facebook</p></a>
+                <a [href]="instagram" class="footr__link" target="_blank"><p class="my-0"><i class="fa fa-instagram"></i> instagram</p></a>
+                <a [href]="'skype:'+ skype + '?call' | safe" class="footr__link"><p class="my-0"><i class="fa fa-skype"></i> skype</p></a>
+                <!--<a href="#" class="footr__link"><p class="my-0"><i class="fa fa-youtube"></i> youtube</p></a>-->
             </div>
             <div class="col-6 footr__cell footr__ccell col-md-3 my-3 my-sm-4 my-md-5 mr-lg-5 ml-xl-3 footr__cellfour">
                 <!--<h5 class="text-capitalize"><a class="footr__link" routerLink="/contact-us">Contact</a></h5>-->
